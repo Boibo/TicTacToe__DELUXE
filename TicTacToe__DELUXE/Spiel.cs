@@ -208,11 +208,13 @@ namespace TicTacToe__DELUXE
 
         private void GewinnerFestgestellt()
         {
+            Console.SetCursorPosition(0, 10);
             Console.WriteLine("Herzlichen Glückwunsch, Spieler " + Spieler.First(x => x.MeinZug).Zeichen.ToString());
         }
 
         private void UnentschiedenFestgestellt()
         {
+            Console.SetCursorPosition(0, 10);
             Console.WriteLine("Unentschieden!!!");
         }
 
